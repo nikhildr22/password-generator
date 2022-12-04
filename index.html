@@ -1,0 +1,22 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="card-first">
+            <h1 id="headline">Generate a <span id="headline-green">random password </span></h1>
+            <p id="tagline">Never use an insecure password again.</p>
+            <label for="passwordLength"> Length: </label>
+            <input type="number" onkeypress="validateIfNumber()" class="passwordLength" id="passwordLength" required value="8" min="1">
+            
+            <button id="generate-button" onClick="generatePasswords()" > Generate Passwords</button>
+        </div>
+        <hr/>
+        <div class="card-second">
+            <input type="text" class="result-password" id="passwordField-1" readonly>
+            <input type="text" class="result-password" id="passwordField-2" readonly>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
